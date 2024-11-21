@@ -3,51 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #ff7e5f;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: background 0.3s ease;
-        }
-
-        a:hover {
-            background: #feb47b;
-        }
-    </style>
+    <title>BSCash - Futuro Financiero</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>¡Bienvenido a nuestro sitio web!</h1>
-        <p>Estamos encantados de tenerte aquí. Explora y descubre todo lo que tenemos para ti.</p>
-        <a href="#explorar">Comenzar</a>
-    </div>
+    <header>
+        <h1>BSCash</h1>
+        <p>El futuro de las finanzas en Binance Smart Chain</p>
+    </header>
+    <nav>
+        <a href="#welcome">Bienvenida</a>
+        <a href="#vision">Visión del Proyecto</a>
+        <a href="#buy">Dónde Comprar</a>
+        <a href="#stats">Estadísticas</a>
+        <a href="#updates">Actualizaciones</a>
+        <a href="#faq">FAQ</a>
+        <a href="#roadmap">Próximos Cambios</a>
+    </nav>
+    <main>
+        <section id="welcome" class="card">
+            <h2>Bienvenido</h2>
+            <p>Gracias por unirte al ecosistema BSCash, un proyecto diseñado para revolucionar las finanzas descentralizadas en la red Binance Smart Chain.</p>
+        </section>
+        <section id="vision" class="card">
+            <h2>Visión del Proyecto</h2>
+            <p>Con BSCash, aspiramos a construir un ecosistema financiero confiable, eficiente y accesible para todos. Nuestra meta es proporcionar herramientas DeFi, transparencia y crecimiento sostenible para nuestros inversores y usuarios.</p>
+        </section>
+        <section id="buy" class="card">
+            <h2>¿Dónde comprar BSCash?</h2>
+            <p>Puedes adquirir BSCash en PancakeSwap usando la siguiente dirección de contrato:</p>
+            <code>0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d</code>
+            <p><a href="https://pancakeswap.finance/" target="_blank" class="btn">Ir a PancakeSwap</a></p>
+        </section>
+        <section id="stats" class="card">
+            <h2>Estadísticas en Tiempo Real</h2>
+            <h3>Capitalización de Mercado</h3>
+            <iframe src="https://poocoin.app/tokens/0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d"></iframe>
+            <h3>Gráfico de Liquidez</h3>
+            <iframe src="https://dexscreener.com/bsc/0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d"></iframe>
+        </section>
+        <section id="updates" class="card">
+            <h2>Cambios Realizados</h2>
+            <ul>
+                <li>17/11/2024: Lanzamiento oficial de BSCash.</li>
+                <li>18/11/2024: Integración con PancakeSwap.</li>
+                <li>20/11/2024: Primera auditoría de seguridad completada.</li>
+            </ul>
+        </section>
+        <section id="roadmap" class="card">
+            <h2>Próximos Cambios</h2>
+            <ul>
+                <li>Integración con más plataformas DeFi para liquidez.</li>
+                <li>Lanzamiento de staking con recompensas en BNB.</li>
+                <li>Auditorías adicionales para garantizar la seguridad.</li>
+            </ul>
+        </section>
+        <section id="faq" class="card">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            <div class="faq-item">
+                <h3>¿Qué es BSCash?</h3>
+                <p>BSCash es un token basado en la red Binance Smart Chain diseñado para proporcionar utilidad y valor en el ecosistema DeFi.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo puedo adquirir BSCash?</h3>
+                <p>Puedes comprar BSCash en PancakeSwap utilizando la dirección de contrato proporcionada.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué recompensas ofrece el proyecto?</h3>
+                <p>En el futuro, implementaremos recompensas por staking y otros beneficios exclusivos para nuestros holders.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BSCash. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>

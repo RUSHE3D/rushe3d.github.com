@@ -1,75 +1,304 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSCash - Futuro Financiero</title>
+    <title>BSCash - Financial Future</title>
+    <link rel="stylesheet" href="./commonStyle.css">
     <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./ico/logo-black.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>BSCash</h1>
-        <p>El futuro de las finanzas en Binance Smart Chain</p>
+        <div id="logo">
+            <a href="./index.html">
+            <img src="./img/logo-white.png" alt="">
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                     <img src="./img/logo-white.png" alt="">
+               </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
+            <li class="nav-link"><a href="mailto:bncash@protonmail.com">Contact</a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
     </header>
-    <nav>
-        <a href="#welcome">Bienvenida</a>
-        <a href="#vision">Visión del Proyecto</a>
-        <a href="#buy">Dónde Comprar</a>
-        <a href="#stats">Estadísticas</a>
-        <a href="#updates">Actualizaciones</a>
-        <a href="#faq">FAQ</a>
-        <a href="#roadmap">Próximos Cambios</a>
-    </nav>
-    <main>
-        <section id="welcome" class="post">
-            <h2>Bienvenido</h2>
-            <p>Gracias por unirte al ecosistema BSCash, un proyecto diseñado para revolucionar las finanzas descentralizadas en la red Binance Smart Chain.</p>
-        </section>
-        <section id="vision" class="post">
-            <h2>Visión del Proyecto</h2>
-            <p>Con BSCash, aspiramos a construir un ecosistema financiero confiable, eficiente y accesible para todos. Nuestra meta es proporcionar herramientas DeFi, transparencia y crecimiento sostenible para nuestros inversores y usuarios.</p>
-        </section>
-        <section id="buy" class="post">
-            <h2>¿Dónde comprar BSCash?</h2>
-            <p>Puedes adquirir BSCash en PancakeSwap usando la siguiente dirección de contrato:</p>
-            <code>0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d</code>
-            <p><a href="https://pancakeswap.finance/" target="_blank" class="btn">Ir a PancakeSwap</a></p>
-        </section>
-        <section id="stats" class="post">
-            <h2>Estadísticas en Tiempo Real</h2>
-            <h3>Capitalización de Mercado</h3>
-            <iframe src="https://bscscan.com/token/0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d" width="100%" height="500px"></iframe>
-        </section>
-        <section id="updates" class="post">
-            <h2>Cambios Realizados</h2>
-            <ul>
-                <li>17/11/2024: Lanzamiento oficial de BSCash.</li>
-                <li>18/11/2024: Integración con PancakeSwap.</li>
-                <li>20/11/2024: Primera auditoría de seguridad completada.</li>
-            </ul>
-        </section>
-        <section id="roadmap" class="post">
-            <h2>Próximos Cambios</h2>
-            <ul>
-                <li>Integración con más plataformas DeFi para liquidez.</li>
-                <li>Lanzamiento de staking con recompensas en BNB.</li>
-                <li>Auditorías adicionales para garantizar la seguridad.</li>
-            </ul>
-        </section>
-        <section id="faq" class="post">
-            <h2>Preguntas Frecuentes (FAQ)</h2>
-            <div class="faq-item">
-                <h3>¿Qué es BSCash?</h3>
-                <p>BSCash es un token basado en la red Binance Smart Chain diseñado para proporcionar utilidad y valor en el ecosistema DeFi.</p>
+
+    <!-- Hero page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                The <span class="cryptoText">FUTURE</span> of finance on Binance Smart Chain.
+            </h1>
+            <p class="sub-headline">
+                You can see a record of all your transactions 
+                anytime you want and never have to worry about 
+                someone erasing or stealing your money!
+            </p>
+            <div class="btnContainer">
+                <button class="btn btn1">Learn About</button>
             </div>
-            <div class="faq-item">
-                <h3>¿Cómo puedo adquirir BSCash?</h3>
-                <p>Puedes comprar BSCash en PancakeSwap utilizando la dirección de contrato proporcionada.</p>
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/hero-image.png" alt="">
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section>
+        <div class="carouselContainer">
+            <div class="eachCarousel eachCarouselBorder">
+                <img src="./img/pancake-icon.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">PancakeSwap</h1>
+                    <p class="carouselPara">We have a presence in PancakeSwap with competitive prices.</p>
+                    <button class="btn carouselBtn ">Buy & Trade</button>
+                </article>
             </div>
-            <div class="faq-item">
-                <h3>¿Qué recompensas ofrece el proyecto?</h3>
-                <p>En el futuro, implementaremos recompensas por staking y otros beneficios exclusivos para nuestros holders.</p>
+    
+            <div class="eachCarousel">
+                <img src="./img/bnb-icon.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">BNB Network</h1>
+                    <p class="carouselPara">Our presence is consolidated in the Binance network to make all our operations transparent </p>
+                    <button class="btn carouselBtn">See More</button>
+                </article>
             </div>
-        </section>
-    </main>
-   
+    
+            <div class="eachCarousel">
+                <img src="./img/bkh-icon.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">BlockChain</h1>
+                    <p class="carouselPara">Developing our own BlockChain that is accessible to everyone</p>
+                    <button class="btn carouselBtn">Learn About</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/contract-icon.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Development of smart contracts</h1>
+                    <p class="carouselPara">Develop contracts on our own blockchain for token creation, research and low level testing.</p>
+                    <button class="btn carouselBtn">Learn About</button>
+                </article>
+            </div>
+    
+        </div>
+        <div class="carouselIndicator">
+            <div class="indicator activeIndicator" onclick="slideCarousel(0)"></div>
+            <div class="indicator" onclick="slideCarousel(1)"></div>
+            <div class="indicator" onclick="slideCarousel(2)"></div>
+            <div class="indicator" onclick="slideCarousel(3)"></div>
+
+        </div>
+    </section>
+
+    <!-- Processes -->
+    <section class="gridSection">
+        <div class="sectionDesc processessDesc">
+            <h1 class="sectionHeader">Project vision</h1>
+            <p class="sectionPara">With BSCash, we aim to build a reliable, efficient and accessible financial ecosystem for everyone. Our goal is to provide DeFi tools, transparency and sustainable growth for our investors and users.
+            </p>
+            <div class="eachProcesses">
+                <img src="./img/handshake-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Trading</h1>
+                    <p>
+                        Help and improve our contracts in future cryptocurrencies, implement security systems and create a sustainable and long-lasting ecosystem for our users avoiding inflation and maintaining a good market share.
+                    </p>
+                </div>
+            </div>
+            <div class="eachProcesses">
+                <img src="./img/cart-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Buying</h1>
+                    <p>
+                        Help our ecosystem and increase the value of your assets for future profits.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic processesPic" id="sectionPic">
+            <img src="./img/chain-process-img.png" alt="">
+        </div>
+    </section>
+
+    <!-- Markets -->
+    <section class="gridSection">
+        <div class="sectionDesc marketDesc">
+            <h1 class="sectionHeader">Markets at finger</h1>
+            <p class="sectionPara">Process of purchasing our asset:
+            </p>
+            <div class="eachMarket">
+                <img src="./img/buy-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Buying</h1>
+                    <p class="darkPara">
+                        You can purchase BSCash on PancakeSwap using the following contract address: 
+0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/trading-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Trading</h1>
+                    <p class="darkPara">
+                        Make our currency everywhere, you and everyone will win by promoting the prosperity of the asset.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/support-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Supporting</h1>
+                    <p class="darkPara">
+                       We will assist you with any process/question or concern you may have about our asset.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/online-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Online</h1>
+                    <p class="darkPara">
+                        Let's make our world a more decentralized and connected place, let's change the payment method we know.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic marketspicSection" id="sectionPic">
+           <h1 class="marketspicHeader">ECOSYSTEM</h1>
+            <div class="marketsPicContainer">
+                <div class="marketPic marketPic1">
+                    <img src="./img/persent-icon-white.svg" alt="">
+                    <article class="marketTitle">Low Fee</article>
+                </div>
+    
+                <div class="marketPic marketPic2">
+                    <img src="./img/dev-icon.svg" alt="">
+                    <article class="marketTitle">Development</article>
+                </div>
+    
+                <div class="marketPic marketPic3">
+                    <img src="./img/cen-icon.svg" alt="">
+                    <article class="marketTitle">Centralized</article>
+                </div>
+    
+                <div class="marketPic marketPic4">
+                    <img src="./img/handshake-icon-white.svg" alt="">
+                    <article class="marketTitle">Connected</article>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="gridSection">
+        <div class="sectionDesc dashboardDesc">
+            <h1 class="sectionHeader">Trade crypto in seconds</h1>
+            <p class="sectionPara">
+               With just a few clicks you can buy our token
+            </p>
+            <button class="btn">Explore Now</button>
+        </div>
+
+        <div class="sectionPic bouncepic newsletterPic">
+            <img src="./img/trade.png" alt="">
+        </div>
+
+    </section>
+
+    <div class="fundSection">
+        <div class="sectionDesc">
+            <h1 class="sectionHeader">Control your funds</h1>
+            <p class="sectionPara">
+                Decide on your success in the financial world.
+            </p>
+            <div class="fundsContainer">
+                <div class="fund">
+                    <img src="./img/cryptocurrency-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">Support All Currency</h1>
+                    <p class="darkPara">
+                        Accept and process payments from all types of currencies.
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/blockchain-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">BlockChain System</h1>
+                    <p class="darkPara">
+                        Using the BlockChain for secure, impenetrable transactions and operations
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/cryptocurrency-sell-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">Fund Selling</h1>
+                    <p class="darkPara">
+                        Start growing your wealth by investing in our assets
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/cryptocurrency-card-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">Crypto Card (Coming soon)</h1>
+                    <p class="darkPara">
+                        Use your crypto cards for the management of your assets
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footerlinksContainer">
+        <div class="footerAboutus">
+            <img src="./img/logo-white.png" alt="">
+            <p class="darkPara">No commissions, no misinformation, for a connected and financially and digitally free world</p>
+            <div class="footersociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Explore</h1>
+            <a href="./aboutus.html" class="eachLink">About us</a>
+            <a href="./faq.html" class="eachLink">FAQ</a>
+            <a href="mailto:bncash@protonmail.com" class="eachLink">Contact</a>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Resource</h1>
+            <a href="#" class="eachLink">Style Guide</a>
+            <a href="#" class="eachLink">Change Log</a>
+            <a href="#" class="eachLink">License</a>
+        </div>
+    </div>
+
+    <div class="footerCopyright">
+        <p>&copy; 2024 BNCash</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

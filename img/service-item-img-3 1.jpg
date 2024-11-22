@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCash - Financial Future</title>
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./ico/logo-black.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./img/logo-white.png" alt="">
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                    <img src="./img/logo-white.png" alt="">
+                </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
+            <li class="nav-link"><a href="mailto:bncash@protonmail.com">Contact</a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- FAQ page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                <span class="cryptoText">FAQ</span>
+            </h1>
+            <p class="sub-headline">
+                This section contains the most frequently asked questions and explains each question concisely so that users can correctly understand the aspects of the question.
+            </p>
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/faq.png" alt="">
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqQuestions = document.querySelectorAll('.faqQuestion');
+    
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const parent = question.parentElement; 
+                    const answer = parent.querySelector('.faqAnswer');
+                    const toggle = parent.querySelector('.faqToggle');
+    
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        toggle.textContent = '+';
+                    } else {
+                        answer.style.display = 'block';
+                        toggle.textContent = 'âˆ’';
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <section class="faqSection">
+        <div class="faqContainer">
+            <!-- Q 1 -->
+            <div class="faqItem">
+                <div class="faqQuestion">
+                    <h3>1. What is BSCash?</h3>
+                    <span class="faqToggle">+</span>
+                </div>
+                <div class="faqAnswer">
+                    <p>BSCash is a Binance Smart Chain (BSC)-based token designed to revolutionize decentralized finance (DeFi) by offering fast transactions, low fees, and sustainable investment opportunities.</p>
+                </div>
+            </div>
+
+            <div class="faqContainer">
+                <!-- Q 2 -->
+                <div class="faqItem">
+                    <div class="faqQuestion">
+                        <h3>2. What is the BSCash contract address?</h3>
+                        <span class="faqToggle">+</span>
+                    </div>
+                    <div class="faqAnswer">
+                        <p>The official address of the contract is:
+                            <p> 0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d</p>
+                            <p> Always verify the address before making any transaction.</p>
+                    </div>
+                </div>
+
+                <div class="faqContainer">
+                    <!-- Q 3 -->
+                    <div class="faqItem">
+                        <div class="faqQuestion">
+                            <h3>3. Where can I buy BSCash?</h3>
+                            <span class="faqToggle">+</span>
+                        </div>
+                        <div class="faqAnswer">
+                            <p>You can buy BSCash on PancakeSwap, a trusted decentralized exchange platform.
+                                Simply import the token using the contract address mentioned and make the purchase with BNB.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqContainer">
+                        <!-- Q 4 -->
+                        <div class="faqItem">
+                            <div class="faqQuestion">
+                                <h3>4. What are the advantages of investing in BSCash?</h3>
+                                <span class="faqToggle">+</span>
+                            </div>
+                            <div class="faqAnswer">
+                                <p>-Low transaction fees thanks to the Binance Smart Chain.</p>
+                                <p>-Limited supply</p>
+                                <p>-Transparent project with a clear roadmap and audits on the way.</p>
+                            </div>
+                        </div>
+
+                        <div class="faqContainer">
+                            <!-- Q 5 -->
+                            <div class="faqItem">
+                                <div class="faqQuestion">
+                                    <h3>5. What makes BSCash different from other cryptocurrencies?</h3>
+                                    <span class="faqToggle">+</span>
+                                </div>
+                                <div class="faqAnswer">
+                                    <p>BSCash focuses on providing long-term value through:</p>
+
+                                    <p>-A robust economy (tokenomics) designed for sustainability.</p>
+                                    <p>-Accessible and easy-to-use DeFi tools.</p>
+                                    <p>-A focus on investor security and trust.</p>
+                                </div>
+                            </div>
+
+                            <div class="faqContainer">
+                                <!-- Q 6 -->
+                                <div class="faqItem">
+                                    <div class="faqQuestion">
+                                        <h3>6. What is the total supply of BSCash?</h3>
+                                        <span class="faqToggle">+</span>
+                                    </div>
+                                    <div class="faqAnswer">
+                                        <p>The total supply is 20.000.000 tokens. Part of these will be reserved for liquidity and future development, while the rest will be available to the community.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faqContainer">
+                                    <!-- Q 7 -->
+                                    <div class="faqItem">
+                                        <div class="faqQuestion">
+                                            <h3>7. What are the future plans for BSCash?</h3>
+                                            <span class="faqToggle">+</span>
+                                        </div>
+                                        <div class="faqAnswer">
+                                            <p>Some important milestones in our roadmap include:</p>
+
+                                            <p>-Launching staking with rewards in BNB and BSCash.</p>
+                                            <p>-Listings on CoinMarketCap and CoinGecko.</p>
+                                            <p>-Expanding use cases in e-commerce.</p>
+                                            <p>-Expanding into global markets with innovative marketing strategies.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="faqContainer">
+                                        <!-- Q 8 -->
+                                        <div class="faqItem">
+                                            <div class="faqQuestion">
+                                                <h3>8. How can I participate in the BSCash community?</h3>
+                                                <span class="faqToggle">+</span>
+                                            </div>
+                                            <div class="faqAnswer">
+                                                <p>You can join our community on platforms like Telegram, Twitter and Discord to stay informed about the latest updates, participate in discussions and be an active part of the project's growth.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="faqContainer">
+                                            <!-- Q 9 -->
+                                            <div class="faqItem">
+                                                <div class="faqQuestion">
+                                                    <h3>9. What rewards can I get by investing in BSCash?</h3>
+                                                    <span class="faqToggle">+</span>
+                                                </div>
+                                                <div class="faqAnswer">
+                                                    <p>As a BSCash holder, you will be able to:</p>
+                                                    <p> Benefit from price appreciation as the project grows.</p>
+                                                    <p>Earn bonuses on exclusive events and promotions.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="faqContainer">
+                                                <!-- Q 10 -->
+                                                <div class="faqItem">
+                                                    <div class="faqQuestion">
+                                                        <h3>10. Are there any risks to investing in BSCash?</h3>
+                                                        <span class="faqToggle">+</span>
+                                                    </div>
+                                                    <div class="faqAnswer">
+                                                        <p>As with any cryptocurrency investment, there are risks associated with it due to market volatility. However, our team is committed to minimizing these risks through transparent strategies, audits, and continuous development.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="faqContainer">
+                                                    <!-- Q 11 -->
+                                                    <div class="faqItem">
+                                                        <div class="faqQuestion">
+                                                            <h3>11. What are the use cases of BSCash?</h3>
+                                                            <span class="faqToggle">+</span>
+                                                        </div>
+                                                        <div class="faqAnswer">
+                                                            <p>Currently, BSCash is focused on:</p>
+
+                                                                <p>-DeFi Payments: Using the token as a medium of exchange within decentralized applications.</p>
+                                                                    <p>-Generating passive income.</p>
+                                                                <p>-Governance: Holders will be able to vote on key decisions in the future of the project.</p>
+                                                        </div>
+                                                    </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Footer -->
+    <div class="footerlinksContainer">
+        <div class="footerAboutus">
+            <img src="./img/logo-white.png" alt="">
+            <p class="darkPara">No commissions, no misinformation, for a connected and financially and digitally free world</p>
+            <div class="footersociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Explore</h1>
+            <a href="./aboutus.html" class="eachLink">About us</a>
+            <a href="./faq.html" class="eachLink">FAQ</a>
+            <a href="mailto:bncash@protonmail.com" class="eachLink">Contact</a>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Resource</h1>
+            <a href="#" class="eachLink">Style Guide</a>
+            <a href="#" class="eachLink">Change Log</a>
+            <a href="#" class="eachLink">License</a>
+        </div>
+    </div>
+
+    <div class="footerCopyright">
+        <p>&copy; 2024 BNCash</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ‰PNG
+
+   IHDR   Z   Z   8¨A   sRGB ®Îé    IDATx^í½œUÕµ?¾Ûé·ÍÕ.vI‰%±$¶ØÍP¥¨‚‚ H‘âEz¥( é0ˆˆ
+šhÔh4OcŠy&&ÑD¥3å¶Ówûå\Ä 3ÃÌ\óü¼ÿû¿Ã‡ÏÀœ½×^û»×Y{­µË‚àÿoø­´ò€o´”@(#,+Ói5yzªÌUÃg2Â¥BÔrÀ 	  †  @, *¶-\®@	”BÊ¯~Ç P¢"MÉ˜A$„Äè@Äü”Aˆ£rã¯êb q±ŒÅúa·øÿ¯êFmÈaDs(Â0â
+„DÂ +A„K)iÀ„‚tMPÍ'cå!‘ô¯clò0ÈÉ|ğÅ˜qEc¯¢®¦Óiq¤l}s #€7>f€€ş•Y×R^”õİ6XWÌ0•(YÄ%@RR „‰1æH*E (
+   ¥<À#” ” FÃ$ä ˆŠ/#"@BB
+’’¨€ŒH€Hx$ òèßa"\lBTüPQ¼ $˜#Æ<NUH£>J%LÂY€<ÇÆåÉrH)ÇœBfš‰”`Rá\ú@ÅÄ-PÏÛSW]ã„K£F,ÃÚ:îo“Vâíj³¯§Óivğotú4ÙS]~º¯Á›ÌŠTïı^á;y€òcÚ‚1àº.À\Â%€âÀß"x_µıGğ |ÔaÂpğw¶E)>„ã¨øJv"ZQÙâßêM}…êúÅAúŠ‡ˆ,pë\/¦Y!ù^ÇLkšJ\×ÃŠf ]‹ƒšÚĞušb†	TƒÚšı€º.°4Í•B Æ˜®b‚T„™ÙŸå«0—[|àO¿ıÒè}+çŸL[©Csİ$„85ç;à˜“OôF÷ä]'k-”Õ&˜"„\P$ÀŒK)Šú$xÄª”C)€ˆP:8|¼(»@^ÂÛ¢ˆ$8ûj¤¼G\ÊH`¡882BÚPŠğC‰"j@F"8'B£<`€>4t‚	(`)º†À0„¸KrMµWUõ|×¶¯P W„Ş¾Ğq>ÇìU5Ã vÀ \ê9.IÖ>$ÀËœ²O?øà_K–è+WZeß]£ŠG(bRş!º! Á6Ï±&³e‹eÊb9y/”Ë½íêdUå#ô€Ğëÿã)a§%KŒ
+Œ;3Æ§¹¶}ü?+B<1ÿùscùËÁ¾ô˜2¥-¬gë¶mú\÷lBˆ$X}Ä³íÇJzìKÏ¯FliÒŠ©ïµö
+Å£O¬êóĞşÿñàµÁÊI“N–š1œKşS„Ÿc)ÂR>_•NÛõHI	{Íœv›‹%ÿ±fÅ€AŸ’~øçkİÚ]ÉˆĞ’DMYĞcÈîöáÿÅ:)}#dDè4ÏÎoˆprÇP«mÈº80‘HX9mr'3^HT´
+±ªeJºrãF|\Y°­†»×!j“DŸTµTuíÍôG}Òé4ùüDı,M5ü‚ë&¨nØ
+‚Â]ªK•sJ!HD’ÈjÃ J‹|E‘2@EóíàÃ `×­‰TJŒJà  ,84A)Ğ€J<À4HBÕÕò¬¿³Qà¾Ë„qc‘®vs|/ĞóBzòkMõ³ç´iPÜÜÎr:R•Òìè‹Ó¦~æéÿ¹«PûÊO’Ré¿ô¶A¿jªñèıK½¶%¦3b/Ôd+,Ãb®ë
+Âa2fÆ±äB)Îx\X‘F'EV%‚³ÈD†’Sß|ˆe¨MŒÎ9DI $ŒIICI½ –2¬Üò*@)CQŸm»'?§¹`ß>eòâ:×¾LSÕİ@¢îç PÓœº}Ì{AèÆÍP/èQ'3mOöÛ¹v:…ïA—uY×sØ¾¦€î5/Ú&g~dBS–Ib ¯`MÓ€çy@Uõ"„À ²¢9Í²¢k"’(€F`Ûy (PUR¤‘L$@¶¶Ät˜ªÜlXDÍ9™œÆ\_OæV€øĞ¥÷û¢)£÷]ÇÛ(>ƒ \£qãI „ÍºûŒYÛÔò²ë¡®–&Ñ=ŸœV–øşIŸïÎÕ&‚µ¯^´KŞĞœ†#¦ºtúõy^5«Xifİ¼Y@9CšªÃ‚ï)$Åã"Y„‘kˆ!	 ¢¿H™gPJˆ!Ru• €‚\@!¸Œë&m[r?l¯#åÂ¹$\ha|j õeã&¾Ó‹@¿N*èßõx"fşÄÚ½Û[²dÉëé(O·)3aËêM-IGzrZ™¸ Ã®}…¬ö^ÛÜ}ÄÕM5zèûHÇÛ{÷3îŸPÀp÷I^"<fÏ~Ø`¥Ó¨òì³áß3™¢É{ğéP¶ç0«‘ZSƒµD¢h.ê#mBD¬®NV Ş<Ä;k	‡–í<vÂÊP‚ïjÛäÏÿuyUUU“sQT¿÷ä¹+…¡]EtÃ,	èkg·²«ØªHÉı}×û—ü5¼¨¹İìÎş3†’8ñkşÒ<"ü‘Ö¡öø!q—ƒíDƒÚœIº1¾Òé4zÀÕ6¥gŒvU ôÓªt:l¸ü§èÀ;	»Ÿ5İˆ§(†¦•ôàå3ÛNióE2Õ«Î}œd…s«º6Öøá,™7DÛŸ5Ïl“r?™?t~½°xzÒæòT›±%&íAT‰Äº*%RôÈ[”@ÌŒœHù‘ì€ó-ˆ4T53ÇDÂP<P*HÖ¿åPzö=éº;×-YRÓœA€ş…>Åå\LWŸ­QÖVçœIÈêˆi‹Ç‚HÀHÙYçËHÜ5İ$¨#QWu«4 ï\:#_ö‹“ƒ¬ó¡RS¸ôÅéb”ìhOåÆJ?;m˜'ÂARÈ—^?gXT¾ßòÙP¦íËÕı ¼mk_ªX÷8q+²3€ˆ&DÄJ¸™ 
+û§ë%!’ 9cD _8®Ÿ Z(À7$¼fÉĞ‘ŸEít6tDÁ±ïUTeÉ–…‹§5Åoô¾²²g?óñâÓ ŠÜlÉ¸&¹HÅX1­ö.¥Fy²œ8^ …¢(2T5ÃRU•‡œ•¦:Š@›ú­Gä©^ÖùmLÀUu}Àkã}t¨Ïé€7ÊcÇ<fÏùY{r!RÔ‘‚à+€†]Š`Òö|M‹"dâ€:Ä M†D?–€‰(¸¡è«ª*CßE
+@Bøa(Ü D~×	ùÁª‡ÒEoµçğûïÓM½s¡ßX5ï©%Íá7*ó£şÃg‡_`Äb r)]I©€ÇB:ÄŠbÆâŠãÈ²,Ä¸ QHôÀ|ÉsKR½VÏKÈ
+õ}Ë3üœıKâK›tïY³,‹øPŸï\:&]ŒlEÏİg_PççOĞâFˆC”Å(Át(¡TxdàAy+ä«©(ú=B‚%
+˜)À$2M ¢S×Ì/9şoÛ0`€Ròt’L~¾jöìÈ­iò‰TÇ{ró±au^H$%BH=¦[&f”j
+ÑÇ¤ÍD>¥+LXàxû0Áu%éÔüq‰÷Î
+2ŞÖnxYÕÍ“è&{ö?¯ ¼vÈÈÇòNpšiÆB¶íÛû6k®åq°;%İku:Á“­Ş	ìf¼÷½èòÿÅ@ƒõ0kÆÙRÜ6¿»SUUU4·(úXĞı–§Snyù/™‚¾KëÜ÷ôıä'ÿ›şqÏ»æ@Õ8!é½¹lae)]é@§ÊŞ¤*:‡Öºï´âŞÕ+îHû¥0ĞP!óæi¬‚˜¹ ('*óƒ˜©)Ğ£5«ÈrÓï96×¹êµ®ø<¿d`Ó[Kù¼æÎA3İ€MÃ ®¼]òîíó˜¥-yJ:ÒÑ™6úkBQÎóko›µêuÿ.‰¶jqû‚ŠÏWRñ+BA/³]¿ ² D" XP.I¹Ô-'¡®ÿğÙ/¿ë±ßş;¨K»õ«úÙ’ƒÏËãøÁª'Ÿ¬‡nõ’€‚Ca»økLW/pjò¿9‰¶ºxÉÀMúşGã¥ÇâÙ­Lº§Re÷f]ût†RMdì<àB ]7ìÀ÷}Ì$!•˜I@PÔT²‚¨
+’ucµZÀıì¾ê/H]±ú‘GÖ´Dê+{Mïşs½ŸN°Ì¼±vÅí¥Ğ,	è›gŒŒ“Z¿*í‡v¦ğáÉa«KJúöÅsÛSßè*9?FWT(„ğB0ï-°Wƒf"÷W2YÇ]?4uC7†eêy^®iÆ)‚óv¾ëá2Ó$¦ª“İ;väL¢îãWµyÎœù¥€s°ÎU·ßõ˜ïÓÓ1™·6­î]
+­o t«íB×.t²öoéôâ–o¢D|çg?ÑÛ¤&CU9Ç§Û¶]€ d¼‚ó `ƒªÍà¸³sÍ‰UôK§SŠ¢_T—Ï]éöı²6”†XpQ„§a8´*==²Û‹í–€õãÊÛçXfü4Ïw²omXÙ§%u¿‘yW¹0c	}»Œ;Yû7ôzIsşØc†¯zˆÉõ€Q +'Ú¶ÔuÃÅ­ÏUW/Ü<vêoKéÌÁ:½Æ¤Ïv;Ã°‡a™­çós9f@uÒÆ)S^l)íŸô¼{NÎqNÓ1Î¼³yUß–ÖÊ—$Ñ½g°ìöÛişÈÎ:¿¡_†Í’èÈËª>½ÕYD5Æî¯®½#d")0æbmwæ­3éÃR:ÑXÛ§Lio‡öHEÓ.İĞâ~Ğ*¡­:ynKÚ¹¬çİsE;‡Aİëşv.´«Ø-ó"/ã|äïØ‰¾ç©'¾;®â‘ê\İOŸÌÅŸƒÚº'H(_]ŸşyK:ßÜ²Ñ65…ˆJ!ĞİŒ±„ËÅ‘€[·ÍŸ÷`si\ÖsàÇñÎP	©{÷¹eĞ-R=ßH¢³­S/aÓ¼ØÏ{ôwÒ›z@:m²vÖ<’ˆßUkçA"‘øƒ½§feÕğq5·ÃıÒi] er¹¯;Z5wn“Á¬èKú«/ãİ!91ƒ”ëº½:÷‰È‚h´‹»İ9[Q³8kßYÿô·§£;¥Ó&8l¦ùCVğ>qw]GG+ßkàN#•Ç8Ş²Œ¿gª÷Ï®öÈ¢hY°A ¥„ıŸ˜”Ò¸1z1ŒÓÜÀ?V`„ƒ0ôUUu¥ÃÏ%c¿yú³­3g6h½Æ<xvHÌÙ!ççp¢~d³¿ÿù¼Ç'45Ğ—÷<[Ht–d¼öíõO}{}Ş±ú6`¨§1ÇßwôKrX"IÚİ¾=®ñİÿÕz²@ ×[RŞ°lÔ¸ß4ÖÁë‡ÑÊN>~2¬3°ª]J9W1Æ‚R
+%çBF€‘İÎ0Æ$Z	Ø‡…Ü lqÕŒÑ¹Æhß:räq!Ç+sT**VËt/˜üò¢ëö½†ÎÄ+¼³aA³¾‚#é•4^3b„%‰½$T|ºÈoôªº·‘];K|ÆS
+¹ÂTÆwkvnÂê1ãê9•Ã‡‘è–N_}>W´$Ö”ãÜ04’É$·sùºªí
+\Ïf^ t•`‚„œC¹HÅ¬Tµ›/˜AÁÙ‡²ÿêÉcŞl¼›ïñ2ŸçÂl®®}\°vîô¿7VşªîCæ3‰Od€Ú‹}}Z¹+YGW>6Ü¨-(‹Íd¼c-ü=¥ÃşU£gÔ—")a·óæªr˜
+]÷ÙçF~¨±õ˜8aŒ²ceå¢*1'ö ¤=)¹ØÁ™ÿgÏ²vm2¤¸^W9q¢¢ 3 ÎFuQõäåA7Êr¹ÚZMìãÕSÇŞĞX[7zo@yWK·Ú…®½ü•eONo¬ìµ=?Å:1êœ’½š³şo‘èNé&—©iPQ.Ô8È$¤ÒyEº~P©çäô<İØO•gœÚ,R=çŠuét½µºHÅü>ğ·b±~ª®" 0cşs¹jŒ©it‡ª¶ÚT v=îaİˆÁX«Õ‰ÔîÙµËyŸµOMÏÙñÊÁƒcá%L¨ç.ÿd>wíÂ'~ÙØ×÷¼„A|¢ä¡[&êºUUU5²8Û¸*Iuô2$´JÎt<÷è²íÛæÍ»³¡&ºOMOÑË*úRœÚìš-SÒ“ë•“ Ş6cÒÓ†¢Ş¦ªêßöŠ'W™°(š_qn¸S]F§¯DXï!ºøùìs¹rm|CVQ¯Aƒ.ô>…r˜~áƒ—W<}OCToèuïrÈñœ3æP·íÛ¿­èİ€ÊgêÚ¶MÛ¸íoÜ0cÆG28`öÔ3óR®·öó6ßòèäSëIÕÆJ¬|~NZM&z1?Àsäònœ8ucS–ÀÑŞW¦g~ïŸAÔG]Ûk¯#äyùì¶mKæ4¨:¸™™,»ØËV;	¨Ü´zÉã{¤İéöûV@¬,(ÍóoıÖTGÄHdÓ;ŞÍå¾¬Ÿ• v™>n„nÅ‡P`Qğo˜8ñ‘#;ĞÚøóE_#åxIY´iıšc&|©’–†9•şèß$TÊ
+¾¿r@$i•LvY1íáOä¡Ç¨GººO 7¸oÏÙ²háSG–¹¹ïĞÕ«'1æÚë~çoèC™é2fLÅóÓ¦Õüİåé4iÓÆÚ"¹8—ççƒs«fÔŸ,ûL°ÅS·œÔvïÙ4®ô°f÷ûê&	øÛ†Çg}'é:jÂµGgÅÌXÖ®Ë}úÂ’™wé D¼&øW*’	À‚]Us§\u$Ğ·ô¹µ‚B[#wó+Ğ‘”ıÖu-R%ÔQ;’4!õi€0‘¡ëâx¼ğ`(BÀË°®K%º‡¶÷2“_»eÂÔ{dşÎñãÏq°\©Æb	Éefõ¨1ç5ÇK«§~*7bí”/—rá^„ ·×ÌœÑùúé<è¹
+V/”BÓTÍ¼gíÜQï|Ù{Ä¬6!1Ô±PŠkeèÿ‘şÓ0€†˜JpH€&X†q=é¯’sÛY‰æÏorr>ŒÕ&'ÃhÄãAáT&ÅU4¤g ¨àvš®¥Æ$’¨Š½Àgªeq%fb¨"ğZ(¨¦O'­3yN½Ovì„JÜx4CÏ.Ø¿<kÖ²RôòmNÍ¡z­
+*ßºaÎ£]¥sÇc/C8Ÿr»!_k˜Ë1‘?ÊæëÎ…„œŒˆÕÎ°â§êª¦JÔø®³Ÿú*¸d ¬`ˆÚëŠbèŠV[½¿ÚÃ’:Qö…Ôş“aáªV‰ì§ó›XŞ:*ĞÈ)~‡Ùatç4n¢¨+8É¤@WUUD}9DÖTKB j¦Š0e±ó×›ùµáæFÍÑR‰[„ïíú®J®h©Nèô1¾«Ô‹­œH»6´÷[?{r=G¥ë#^×bmâ! ¶T•w
+¶}¥7ÏHêóŒ‚U! Î)CÌ7£-gPÂ µJ”jÏqmMÕ `Ì"$:—…BÎ|7ô¿ƒÈßşü¦Ç^:š èÈ]eq²PbücÁeKö¡cÛ¿CŒ×©:‰Uç^à›H&ÂB]Á6tˆUˆ	Q(UÜÓ}0õH;–’fÙ&¨3€ílÛ2gêÀ–Js¿Ñ£Ob$¹.:l'°ÍõÛ0kdÔÙzıÛŸÅ‘uËÁ±‰V­xm¦&øØÉç~ĞŒ JaH	bÑ)=dH™G<ÚEUÀËUâ–•ŒdR<Ñi’²K-ÓDùÏPÚéW¶,j4y4 áÕë®§÷ Wø…üÓJ€6l›5kï¡ D^bu>I›ŠŞZçöQã%b›F ¶vôKóf.o)Ğ}ÆNYÈ€r™Dñ6¡çnˆÇ
+5ä4Eto0åÆ‚ÇGY©”å± ‰ñNŞÉ>}2®}¿”‰-¢ykÏ{OÄÀº´eãÉ”éuË_Üüx£KfÅ<]™.MõREQ)`â¾-ãÒõT@KŠÊw;¹² ›³	!
+ß·ëîRÆö–¨n#}V4ºŞÇcşÕG«óíéSSÉÖÏ|7Ç„½`öØ‹ÏLùu)¼Zçúë‡hV¢Õ¬ºÚÂ…Šüù¢TÜÑ}Ş€JE,¶HKYtM÷|öy±÷¹f{Oœ=›VTt/
+H+dîŞ<õ‘—Ò‰¬›/s¹«XtJÿ°dÉ’Ãv©všş–,{O³âa>SS‹ÂÂİëæNzëh|ÜÖwzGÕŒ­’£B~÷Ò—ÖÎx¢¾ªsãÍãfs¿‹°l{qÎÍÑ=ª¾úş!ÓË¼R1´Ğ"¨ÏÚ1éF#\Íe¼zÆqu?'S©³ß¿¿×¶Yé¯'’;uN®{!à!¤®ÙğÔ¼¯w}Ş:2}\ÒJ½>“s¹‹ºö¼µ³m­=ZD­GÿYWR†@vavĞs«'¶gº¹¼7TîºÆ¬%ˆÄ½0ã½ş³‡Y<‡–oè~ıúéÕ‰ÄEÒRf¤Z·²2ùì¶˜šœYõğÃÕ‡N8½¸æxs½ÆÌ>;@`¾^:IèZ2_ÈH^W7qûÌô‚ƒLõë—ÖC=»(J
+`#DÿıúÙc†¦Óá_dr¹¡)=1À)l[9ı‘Í©Û€Iƒ|ßlõ„ı~k—k0xÔ­Ë/O“7ß<p¾W¯tÂvé`ˆï#):é/zñ•'––$Ñ7ÜN+7gxR\‚uS‘ ¼'9ùKà†!1ÕUSñD¨`é‚G;Ts"fêVèºf<–È"ãÌö'ã­Ú»^`Uo‡cú%ØĞ>
+<Æulˆ<÷I¾?˜ùâ’Ù£ût_æ´€’åVyÅIB‹íf"!®V<qïK,‚Ç¼hö}ÏM=ûš”4Û\æÚ^€ŞuU+§ì:²Îm}FÜAütÀĞq\ŠÎKÕ”0:Æ ˜Ä¹a,ª]€ 
+E¡ü
+í4¿SW·wö¿zöã’€*u1ìr “kaş¸6—×±T=É¸RÕˆ¦I e~½?µjÓºŒ1! ’†b0‚Ö’É¼÷ü²T¹G¥,ÃÁ€À÷¤¿§iJª°oßş8ğ»®›3ç°ğiŸ¡#¯ ÄFÅ˜ÉÖgwœšH@zö%ËçŒøSS Gï£p¨ÂÊñ
+¢£¦i_¬_‘¾éÈz}Œ;%ŸEkñÖ¢®¶¶µi»BêIÏs¤`È°Œ2£˜¢ëJ˜+üƒ†,€i…%â¹÷·7½òÚ3.4Dí5éF…®¹¯ÿÉ¢[ŒT«Ë¥$í¼û¥¦$tFı,§	ÉËĞÔ¼“ïhj^rMÅRíÏÏ†S’‰]ˆ¨í…Ÿ›1cI¾—¢°9KxW‘¼kãìé_ŸFÖ£».zŞ3òØ¨ØhX­jm—–[†ğòûï[=äºæ€•éz÷ğ«45>ERÔ6[WûÌK›æ×ÕŞÚuì¥& ¬ ˆXëå}¢@Ë¶¢á¸cYåe€Å=Ï/x>ÛYR·L0}WÌ4Ş"ûâöíó#uzÔ§Y@B^4|¸®1¥"—÷N%'s'÷e¡àŒ‹Åb ]‘ëØ°wm»•Ÿñ—¥â©x¦.÷N;oï„C'«(º†\÷!áãjíruµ¿ÛşÌÂ~qÚcĞ„¾š^6˜`íXÛ.,^¿hÔ¤¦:uèûnwœRz“Jp+tèÚÅõƒûİ{Îz„QĞIØyòğ£ ¨[·.+Oe½–¶Jv8?“«®-¸»éÍ7£MiTY	HUUóIµèƒ¼<Æ|¿÷$àü,Bƒ?¼±lş}‘9øá!‡ÒÈL‚µÓUÕHÚgØ«ûèÈ Ñ-÷(¤ŞßÔÌ°Ù³hÛª¥«{à¸ëÖ_óäø§[rÏ»Òİ9ç«Æ_÷ªtı‰UUK[r‹&_×77HÎàÒşƒ\—ªªÃ·0té2uå§¸^Nn{eÔ¥-áá`Ù– }(}xQÿá‹4¢vù:ÿ­µOw:²ñN÷Œ¸2¤|D¤b¼`û¢éõd‡¢}îêË„ e	¥<[»ã—V/o`;Ø¡ç÷š×Í~g_-~@ÖÑujşÀavìó«ÿáÈÚ·Ş:æ§—Â7vV>·qz½]L·İš^£á¶g:n&ÿÂË_Ñ</UĞQ°‰íue^ LÔşbåââ1¶#ŸkûYK%Ò,Ó’zíß¢µ¶z'N»špcÈñx!ÃZ„!ÜQÏ¯\ø×R:s°Nÿûÿ’IR¢s$÷<Æò¯­^>qHC4;ß4v)T¬“1B’ÂıÏ­›QÏrèÑmÊ"(Ê/Èæªk¶ılÂu¥„sK:rv&[?IíÏŞX½¬^P(*$½Å¥¼·i˜gb(îyş©Yzpî?XWÕ»9s•0ğÿ7µg×=9ı•RÀî7xÚuºŸºà,Án.Ü÷V<ıĞÿ:Ñú/ªİ»º8°­É\`Bıëæ­éşµÙíÖÉë%­89`ùš¶º±¾JÚ:f!üd^¨ùëû›×7(-7õ¹çX”¥ À¨*éÓÙ6Î  [IDAT•kæ§óvfÈ„^‚Ã{0&f>“±)¥o¶+«X¸jQólå»§O%Š1€†ü I´àçòĞv_ÔP¬¸wïVİ>±¡d[¢ª®¥««Æ|}ï°	µóÔ5‚—w`a~ÿó¯¼å[:š‰_ù43ŸIz¢Á½¼½~yƒ@Guºcp;úéš‚~·õéÇG5Ähdï†Ü¼Iõ¶˜•rÜ¼]+/‡,ü•aho[€¼³ä+§æ@}	ïüØqX‚c‰‚{KÉÏe<”Bğ…|º²fÕ²iÃ¥k—	÷J¡ô$XiåSoÓó/NÛ˜wÛ=š•uÃÂ¾-?ÙùÛú¯µOP©³ûıÍ«­ñëï´B@t&’ğ“˜f¼YµhÖŠÆÊw¿wB—‚öÕ‰Úš‡akCQ= dçx¢èfÜJ©›aÈ4tİ aşX))U5\¶oïN™LÆ~!„?qåÒé¿k¬>İ'vr—‹×Í„—¸yÛœFïîèÑeê:$NƒÂ^Óhàèh”¤:¢‘ßşIõÜ€‡ÇëĞßñë«î?Z#î|‡êä0 ~L3t §6.™ÙP`çë }ç;Fİü!÷ƒsE3D\%fÎ2ÍD“¤,º¤M#Ì§ÌÕÏı=„r™cÖ¾öâ¿CyëÛw|ÇÀ‡Ã¡°Îv
+uít‹=°ñ¹9G2uï<i½ğc§4·û…×ÓßĞÑD·¶ğğD½|°iÕˆ¦>§ëûßw%ãğ	”
+¥WnÆÆ­yzÒMÕ»ãwzõÙyâÖ¡@I#O`İ£»¤ÿ%¹øpıªiQ¬¼É-¸}ûïÄm,5š–mØ4åñ¦xèŞyâz˜§PšßµåµIßê(Z°í,'™ºÜûîÚgª:¢Duh›ÓnsàAŸ¢¶50»~ù´ÿ<4*ÖT§¿Éû»î^ËÉaŒŠÎ¦uíú)î<´7?ºQã” ÌïŞúú·t¤:~ş§Ú9ĞPúá‡Ï¯ìÖ\ :wùpòLD:`á/Y¿æ±’VÀ›Ûæ¡å¢ƒ÷›ºşÙÕ3·6·~ÏNSÖğĞ8% ™=[~1©KsëZ®$I h“›„Ş‰šìıåÆåîYkˆ¡hşô%àÂ.„hº®›å…|á%+™\¿aÙèz[):Xg@[’ãrüî‘nuKèşôêi«T`Ãdn÷Æ×ŠK‹Ÿ’€.êh¿õ,E!'0V[ıŞÖ5ƒZÚòíw½Øuùˆ€)f›¶Ç“©­¶uSÙ&xqÃâQ5ä`4·[oİA—è– t:aÄ7L’~vÃã%îìyıÜgSÏÍÛ»vm}oê·	tZÍ ülÆùq¡gïy÷å¥õv"5”Şı‡åÆ &”„Af0QvÁwJ(?ÒôŸ&øâÍY©îÓeLPÌïs®T°vI!Ÿ‰):=gß±V[»iÙÊæğÔP™7<ş,áÚ¹ÙüÎ][ß›òí}şoı±f6§òX	XİÛ[·X¢íP÷şéË%çwØ®~2–ˆI@„ä oèV†Sú'ß÷]MQj0BYÏw]KQ¥TÁ*‘úRıLA•Sh ‚T]RHÏ!Å«†0·  äßDutıÉôg±´Î¥<·{Ó[ã®-eÀJTi5k„<QJºãÍ-‹Œ´”¡nıF^èÚAg+ü±d¸œQÉR†f±ˆî‹Òƒ³h+‚€nS¢aà)ØôGŠïP£u›Š›©Êçv¼XõêÜº–òqdù~7-XÉå\Û­Şıü¯Æ]S
+½’€¾¼_?=&Ú.,äó'`HwüâùgÜˆ^
+CQ»îJ—g|çjk×†¡”*e¦oï¸^S‹™,ºZHjŠø¶é áGº‘|ƒ‡ü×k6ÚYjÛÕûéåÓW%Í6çæı»«Şİ¢;şÒ+	è¨òUİ†Íõ|¯=ûÖ+ÿ­@ÚÙÊÊ´ÊØŞ”H¶–Pi­“hWŸ®"	]E®Xñï»+¤! {]3g‘Ésİ fOÕ/G×ÛÖÛœA…•w¥Ë=…šğã‚…š
+!®+¡Î!E y7“eçxHE:S‰[p}æy`¦ä,I¤ûÅ/[6 ‘Æ`ÏãqîªºÉ	#CXbN…cÈaÀmĞ$ÆTìX¹ò_û¬›ÓÆÊôè4 •DÊ)’aG…FAdêª‘$*°%1\,¨Á8Ó‚ÀTº¶ğÜLÇ‹Ï6´Ó¨ïõO¬–Ô<Ïkwm*èOyK×áÛÙA´m4qFsÂç’ $ Bå £bPP4=e3&<Ï¡)‡A¦æ—WÔº[·!§¦<Éh "Œ D‚ˆª
+€DŠ"„ˆaÊZ¢ğÓUyöÙ‰?ûF ÷¸·#³áJMKBFI ¥‘T‚*ÂP‰¯¯ APk•ív‚\LÉ17?UïÊâWÏX×Û_—İµsÓÛ%®°TzæÆ<K7$ˆén.£˜Š]?"BPÇ3Éˆ•H–Ù!w¨„{lø¡]p4áxo¿´´Ş±İ~½ºÁ÷åÓ\ê»%Ö"C¡añİèÖb°¢+y!XEHá0Æxá¾õëg6¸vØğ#‹èÏÿµ·dæTM#cXJ Bu%„RÀbÖ!CAÃÂ§ûÉ}5_´)kM¦n|aÑ¼#Û¹óÆùë ´~P°÷íØøË1—7‡#ËÀã7|\°ë æ…Œ~©c˜c^AÊKÆ˜¯kº©" '	ÇzH9†!S.q2Ùè:ì¿¾¹uñ}GĞi€é&W0 œ#I&ˆ ¯D9VÀÑ­u’‰ûÌÇ*Á6”A¦‘ªeË~Ô¸©0*É=ysğã3¢d¸xI2AH –Ñ•ABÁiI÷Åİ+cöÏÖ­{¢ŞõÌƒn{fS¶&<çËu¯?TÚâl÷1›¾àÜìì®·ceà£ï=ØÁh‚ÚCäD@ƒ3 ³/ÿööånh
+ÿ®÷¤ÍLæã ¹'\£¯ ¼	Pú«í^õÌ»>SZ[“ıüËõoúq)|Ã>ã_ü2“ÙTè½ûÜü¡İ›CäšŞ#,ÆŒE^!w"bµÿÕ+kşG]îŸOK¶­ß}¯{r+æ±ï"»sÍëC/nFõTG¯‡6†yU²Ú¿lZø`³M—++G/§Ì/Çaİ—o¾¼²ŞRV´w8–B—
+aœ°ŠA!\R  “Å›sCî
+Ê¢)ØÅˆ¨­j®$6Öáh¢
+ô›9…ÇÂèªP9‘2J%§œó@Ê(LtA=Å)¨€Zİı0ülİºÃ·¦EKfƒn[µUzú÷j_î¨z{Di@J¿òiMõNDı½ŸnYÚ|¯çü+ûoL$öÖürûÚz·²ôê5úš¼– `|°U<ô%Gˆº]ï%(`œK.PH&¥âšÆÛBìŞÿÂæ¹kK‘š¨NğRÅÉ·ëz»é¡edH†(KKÀ%g^À¹Ë9s™Lª˜Ô„ÜnŠÜ1ZÜŸ¼fó¢Ã6E_Çgï¶{ÁÄ­¿ÏP~çÒ—ï¸°Şà€Ñ[¿ÌöK¹^5h³&×Ü6r}Á¶¡
+¹7¶¯ªgŞİT9ôOr¡—I Bˆ ’‹('˜ ²âl„y’¨Ğ‘Â«SuŞQSå}6<º½”Î¬Ó¿ï£ç9y°˜D n!©J  œA&|.¤Ë¢ûŸ%¸Æ˜³C*vBOãÖo^úõ¦ø¢ú¹<Mö&:<QônÏM¿~~)¼ÁŞC×îV€[óÄêº®y&İ¤ûzcÏá</`,Ä
+Ìÿîõ—WŒn¨ñH>ø(wRôN"„‹KM”¥L  MãÑ¦
+-ëæ¤Ip¦º:¹ïàäR:ôUØ£Gº3\¢l·ø.ŒÎËG•3¤ëH†¤PB¼¿ 's»<PO—Ymmó<¥ğ4	½¿­xeà%¥ğû_½Ä±óWÄM²Ïóªß\·dì¸£Š,ñş¶+nÑU‘dş®¯¿¼ru)ÿ7×••Ãõ¦¢vMèsí¬9’›çA¤~‡A{8M¼»¶”9v»{ÁéŠNÂ;†3çKFmZ>ãİÆ@¸¥ûø2nLbŒœÀDæHşãşŸo]ÿ¿2£På•cE,öQÌsL3Âïp®ç”bÍƒJ=Ïè9¹É‰Os÷q.ÛºzÁ×kj‘ğ1‡æ¹]}WŞ*€ucĞã27õç[Æ#wù¿YªK&ã÷İ^–h?0ğ%ĞLãÇ©›üü»SêyÍm ~µ;GŞĞkÄ(äE¦®V®½0ğ1QÉg*Öw
+¡œSp(	CtM"Õ¾Œsò)cˆ*
+ø9dÙ}n!3M	‚ĞFRÄ4-F\×­3İd!+&ˆŒ)ÑÄÒäÉ(ã# 
+à ]W€B1MSqİœ‚†ª†%!j-Ö‘Q*ÍƒõQÑˆğ‡¥ÊË™ïû"ŒîÕÇ
+
+B¢qAyt­©y(Q¶Ãb2Ğ(ã!€‡vkˆ@-£ «ªºÅ<~¼®'Q*ZSæA	é)TºÏnıõÌtsAm¨ÜaaÒËnø@*ÿ‘©“Ç@BL/ğÄNDLE¸¦U&²yÇ&Ï;Ÿˆ	BHàºn¨b5:ì¡"ò‘ı†a1¥é×íD®pt#qñ¶ş(S‚TT„°,çóYlY–®¨XÁ’jFY”¬¢hL¤*Œ•H)aD™‡'e4¢§ºäTÎy”Fiîîô€ ˜úéğ}’
+&ıLÇ I4„TGÅŠã
+&Q¹R—Ûíl?auØ»°½|(àE "ç"ºU%òøèşÂUk§$c©6’Ê‚ã“5-–9Â”Jj˜ñ²¼íj†‘ØvœHÎ„!†kšH€ª©Ø±h	J‹20E¢d¤ ¢ÈkˆR"CP'!eQ&Q¤Å,Q*2„Rˆ]]ä1
+DxP”y(ÊÃe± 4…o»R34Œ’… ]×€¡ë¨®.}9QöÓ(Úq`°‹ƒ…¢LªÅo,ğò U–«y×ñD¹i)…L~çJHìõUoÎmpãcK¥ûkI;ï¼Ê‡şë’ëŸü¤O…e•M+£¹\ö{ªĞ>Uâ1«@Ö^ƒ“™çg‘Á1 PUÌR&„€‚8Ò4‡GÉÅ¢ò@&M˜xÑÒ(ù®A!ä˜H@€
+€àEq†¢D’©0ˆ‹w)©ÅìÑ Eÿ
+‹t„€‚ÂQ´(¢ÔĞáØ4€`K€8VTK?Q,0š}ıïaæv(9,Çˆ˜¨Y¢¢=ŠçÕ¬xóß»˜Pò
+KKGôÿïåÿèoIşyövO„dÇ'    IEND®B`‚                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   #!/bin/sh
+
+# An example hook script to validate a patch (and/or patch series) before
+# sending it via email.
+#
+# The hook should exit with non-zero status after issuing an appropriate
+# message if it wants to prevent the email(s) from being sent.
+#
+# To enable this hook, rename this file to "sendemail-validate".
+#
+# By default, it will only check that the patch(es) can be applied on top of
+# the default upstream branch without conflicts in a secondary worktree. After
+# validation (successful or not) of the last patch of a series, the worktree
+# will be deleted.
+#
+# The following config variables can be set to change the default remote and
+# remote ref that are used to apply the patches against:
+#
+#   sendemail.validateRemote (default: origin)
+#   sendemail.validateRemoteRef (default: HEAD)
+#
+# Replace the TODO placeholders with appropriate checks according to your
+# needs.
+
+validate_cover_letter () {
+	file="$1"
+	# TODO: Replace with appropriate checks (e.g. spell checking).
+	true
+}
+
+validate_patch () {
+	file="$1"
+	# Ensure that the patch applies without conflicts.
+	git am -3 "$file" || return
+	# TODO: Replace with appropriate checks for this patch
+	# (e.g. checkpatch.pl).
+	true
+}
+
+validate_series () {
+	# TODO: Replace with appropriate checks for the whole series
+	# (e.g. quick build, coding style checks, etc.).
+	true
+}
+
+# main -------------------------------------------------------------------------
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = 1
+then
+	remote=$(git config --default origin --get sendemail.validateRemote) &&
+	ref=$(git config --default HEAD --get sendemail.validateRemoteRef) &&
+	worktree=$(mktemp --tmpdir -d sendemail-validate.XXXXXXX) &&
+	git worktree add -fd --checkout "$worktree" "refs/remotes/$remote/$ref" &&
+	git config --replace-all sendemail.validateWorktree "$worktree"
+else
+	worktree=$(git config --get sendemail.validateWorktree)
+fi || {
+	echo "sendemail-validate: error: failed to prepare worktree" >&2
+	exit 1
+}
+
+unset GIT_DIR GIT_WORK_TREE
+cd "$worktree" &&
+
+if grep -q "^diff --git " "$1"
+then
+	validate_patch "$1"
+else
+	validate_cover_letter "$1"
+fi &&
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = "$GIT_SENDEMAIL_FILE_TOTAL"
+then
+	git config --unset-all sendemail.validateWorktree &&
+	trap 'git worktree remove -ff "$worktree"' EXIT &&
+	validate_series
+fi
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            #!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              x}“É®«F D³æ+zrÍ<H/ÑÃØŒ3ì i¦‹Cc†¯“¼e”Ú”t¤’J*ìÏ
+šäßğ€àS–‚œHg4Ç2¼L%„ MQ¹ °² 3Ñ'j1à(.Í¨\„(çy‰ú8%ğÊr"	2âÅ¦Pâ%‘H&\vpıûYcUğƒæ)Šâ8™'¡ŸÓˆ†ñ«íÔ7ëWQárJ¿`÷üĞ"Ë04/I ©OâC?µ1À©Âç)?~Å~şo¬è‹±*Àïk¯.&°O6¸_N¦âù®ö' æñ÷Š²?(Š³wôÖæ\÷àèÄ§‰÷ËFQ›‘EC²õ'B±w"9éx[_<ú†6/¾¨ó=d£ğ[&é©1²×¼­˜»ŠB°·jc<¡"ÇûdûgØ±sŞ&W½am ÒÌøæğÀİkõvAÄğFtTO¤J]ê•¡½Ç+·‹ì1åìHÉ_ùvÍ:‰®iË’ çÈpJİKo7áFkæ›•Œ&öhìó¥–í,†àÒ­û×¦Z¯^âÂ_«ƒi£XOPÓ¨>J˜'ÁÌIqCïüÉl­yg­Aˆ…Œ;äjİaÆuU·3HÛàNÖ”ï–ú@=G+' f.)YZFÙ4ªç8[ßæ¶—NÃğšt„Š‚Ïñq¦u%ÉwYËúrF/ªg”±~ÍZÖ˜âzäbóQeiã ü|ë#ÉR;m´(ì­Ã>=IL‘ğ¦¹‘öî’¼^5›%À·˜Çòö²ìcw9¦oÓ^;%‘B$
+í7Ò¯=¬ÈüÂ]ßF?»ÉLmü›{Æñ¦«xçÜXàáCíÍñÅ5lBc^O.dhv
+¿ƒÂÃ°§ªr?ƒ©E¶Â6;ß½á’_j¬Çèse¤İø$1Ó³—ôªã]Ä-«×Òâ¶‡l9g*ä¥1)µ™kİAç§œÔ»ë`ñ”o9å§[y:Ğmáëñq~²h|Çº–“|lâY‹‚)š,B:«¶6²ô³¼…ˆ K¹ãß¹}3èÂ‡éU$Àºª^‰?¡™ê?‚ğû,ÁTm†–¯?›¿ RÚTk                                                                                                                                                                                                                                                                                                                                                                      

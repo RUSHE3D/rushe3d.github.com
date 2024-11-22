@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCash - Financial Future</title>
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./ico/logo-black.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./img/logo-white.png" alt="">
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                    <img src="./img/logo-white.png" alt="">
+                </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
+            <li class="nav-link"><a href="mailto:bncash@protonmail.com">Contact</a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- FAQ page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                <span class="cryptoText">FAQ</span>
+            </h1>
+            <p class="sub-headline">
+                This section contains the most frequently asked questions and explains each question concisely so that users can correctly understand the aspects of the question.
+            </p>
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/faq.png" alt="">
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqQuestions = document.querySelectorAll('.faqQuestion');
+    
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const parent = question.parentElement; 
+                    const answer = parent.querySelector('.faqAnswer');
+                    const toggle = parent.querySelector('.faqToggle');
+    
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        toggle.textContent = '+';
+                    } else {
+                        answer.style.display = 'block';
+                        toggle.textContent = '−';
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <section class="faqSection">
+        <div class="faqContainer">
+            <!-- Q 1 -->
+            <div class="faqItem">
+                <div class="faqQuestion">
+                    <h3>1. What is BSCash?</h3>
+                    <span class="faqToggle">+</span>
+                </div>
+                <div class="faqAnswer">
+                    <p>BSCash is a Binance Smart Chain (BSC)-based token designed to revolutionize decentralized finance (DeFi) by offering fast transactions, low fees, and sustainable investment opportunities.</p>
+                </div>
+            </div>
+
+            <div class="faqContainer">
+                <!-- Q 2 -->
+                <div class="faqItem">
+                    <div class="faqQuestion">
+                        <h3>2. What is the BSCash contract address?</h3>
+                        <span class="faqToggle">+</span>
+                    </div>
+                    <div class="faqAnswer">
+                        <p>The official address of the contract is:
+                            <p> 0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d</p>
+                            <p> Always verify the address before making any transaction.</p>
+                    </div>
+                </div>
+
+                <div class="faqContainer">
+                    <!-- Q 3 -->
+                    <div class="faqItem">
+                        <div class="faqQuestion">
+                            <h3>3. Where can I buy BSCash?</h3>
+                            <span class="faqToggle">+</span>
+                        </div>
+                        <div class="faqAnswer">
+                            <p>You can buy BSCash on PancakeSwap, a trusted decentralized exchange platform.
+                                Simply import the token using the contract address mentioned and make the purchase with BNB.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqContainer">
+                        <!-- Q 4 -->
+                        <div class="faqItem">
+                            <div class="faqQuestion">
+                                <h3>4. What are the advantages of investing in BSCash?</h3>
+                                <span class="faqToggle">+</span>
+                            </div>
+                            <div class="faqAnswer">
+                                <p>-Low transaction fees thanks to the Binance Smart Chain.</p>
+                                <p>-Limited supply</p>
+                                <p>-Transparent project with a clear roadmap and audits on the way.</p>
+                            </div>
+                        </div>
+
+                        <div class="faqContainer">
+                            <!-- Q 5 -->
+                            <div class="faqItem">
+                                <div class="faqQuestion">
+                                    <h3>5. What makes BSCash different from other cryptocurrencies?</h3>
+                                    <span class="faqToggle">+</span>
+                                </div>
+                                <div class="faqAnswer">
+                                    <p>BSCash focuses on providing long-term value through:</p>
+
+                                    <p>-A robust economy (tokenomics) designed for sustainability.</p>
+                                    <p>-Accessible and easy-to-use DeFi tools.</p>
+                                    <p>-A focus on investor security and trust.</p>
+                                </div>
+                            </div>
+
+                            <div class="faqContainer">
+                                <!-- Q 6 -->
+                                <div class="faqItem">
+                                    <div class="faqQuestion">
+                                        <h3>6. What is the total supply of BSCash?</h3>
+                                        <span class="faqToggle">+</span>
+                                    </div>
+                                    <div class="faqAnswer">
+                                        <p>The total supply is 20.000.000 tokens. Part of these will be reserved for liquidity and future development, while the rest will be available to the community.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faqContainer">
+                                    <!-- Q 7 -->
+                                    <div class="faqItem">
+                                        <div class="faqQuestion">
+                                            <h3>7. What are the future plans for BSCash?</h3>
+                                            <span class="faqToggle">+</span>
+                                        </div>
+                                        <div class="faqAnswer">
+                                            <p>Some important milestones in our roadmap include:</p>
+
+                                            <p>-Launching staking with rewards in BNB and BSCash.</p>
+                                            <p>-Listings on CoinMarketCap and CoinGecko.</p>
+                                            <p>-Expanding use cases in e-commerce.</p>
+                                            <p>-Expanding into global markets with innovative marketing strategies.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="faqContainer">
+                                        <!-- Q 8 -->
+                                        <div class="faqItem">
+                                            <div class="faqQuestion">
+                                                <h3>8. How can I participate in the BSCash community?</h3>
+                                                <span class="faqToggle">+</span>
+                                            </div>
+                                            <div class="faqAnswer">
+                                                <p>You can join our community on platforms like Telegram, Twitter and Discord to stay informed about the latest updates, participate in discussions and be an active part of the project's growth.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="faqContainer">
+                                            <!-- Q 9 -->
+                                            <div class="faqItem">
+                                                <div class="faqQuestion">
+                                                    <h3>9. What rewards can I get by investing in BSCash?</h3>
+                                                    <span class="faqToggle">+</span>
+                                                </div>
+                                                <div class="faqAnswer">
+                                                    <p>As a BSCash holder, you will be able to:</p>
+                                                    <p> Benefit from price appreciation as the project grows.</p>
+                                                    <p>Earn bonuses on exclusive events and promotions.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="faqContainer">
+                                                <!-- Q 10 -->
+                                                <div class="faqItem">
+                                                    <div class="faqQuestion">
+                                                        <h3>10. Are there any risks to investing in BSCash?</h3>
+                                                        <span class="faqToggle">+</span>
+                                                    </div>
+                                                    <div class="faqAnswer">
+                                                        <p>As with any cryptocurrency investment, there are risks associated with it due to market volatility. However, our team is committed to minimizing these risks through transparent strategies, audits, and continuous development.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="faqContainer">
+                                                    <!-- Q 11 -->
+                                                    <div class="faqItem">
+                                                        <div class="faqQuestion">
+                                                            <h3>11. What are the use cases of BSCash?</h3>
+                                                            <span class="faqToggle">+</span>
+                                                        </div>
+                                                        <div class="faqAnswer">
+                                                            <p>Currently, BSCash is focused on:</p>
+
+                                                                <p>-DeFi Payments: Using the token as a medium of exchange within decentralized applications.</p>
+                                                                    <p>-Generating passive income.</p>
+                                                                <p>-Governance: Holders will be able to vote on key decisions in the future of the project.</p>
+                                                        </div>
+                                                    </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Footer -->
+    <div class="footerlinksContainer">
+        <div class="footerAboutus">
+            <img src="./img/logo-white.png" alt="">
+            <p class="darkPara">No commissions, no misinformation, for a connected and financially and digitally free world</p>
+            <div class="footersociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Explore</h1>
+            <a href="./aboutus.html" class="eachLink">About us</a>
+            <a href="./faq.html" class="eachLink">FAQ</a>
+            <a href="mailto:bncash@protonmail.com" class="eachLink">Contact</a>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Resource</h1>
+            <a href="#" class="eachLink">Style Guide</a>
+            <a href="#" class="eachLink">Change Log</a>
+            <a href="#" class="eachLink">License</a>
+        </div>
+    </div>
+
+    <div class="footerCopyright">
+        <p>&copy; 2024 BNCash</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

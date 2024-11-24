@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCash - Financial Future</title>
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./ico/logo-black.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+            <img src="./img/logo-white.png" alt="">
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                     <img src="./img/logo-white.png" alt="">
+               </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
+            <li class="nav-link"><a href="./faq.html">FAQ</a></li>
+            <li class="nav-link"><a href="./presence.html">Presence</a></li>
+            <li class="nav-link"><a href="mailto:bncash@protonmail.com">Contact</a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                <span class="cryptoText">NETWORK </span> PRESENCE
+            </h1>
+            <p class="sub-headline">
+                We currently have a presence on two networks, the BNB network and the SOL network.
+            </p>
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/world.png" alt="">
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section>
+        <div class="carouselContainer">
+            <div class="eachCarousel eachCarouselBorder">
+                <img src="./img/sol-icon.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">SOL Network</h1>
+                    <p class="carouselPara">Our presence is consolidated in the Binance network to make all our operations transparent </p>
+                    <button class="btn carouselBtn "><a href="">See More</a></button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/bnb-icon.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">BNB Network</h1>
+                    <p class="carouselPara">Our presence is consolidated in the Binance network to make all our operations transparent </p>
+                    <button class="btn carouselBtn"><a href="https://bscscan.com/token/0x4d1fd955520a26660cdf6c6a62467509fde9cb6d">See More</a></button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/eth-icon.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">ETH Network</h1>
+                    <p class="carouselPara">Our presence is consolidated in the Binance network to make all our operations transparent </p>
+                    <button class="btn carouselBtn"><a href="">SOON</a></button>
+                </article>
+            </div>
+
+        </div>
+        <div class="carouselIndicator">
+            <div class="indicator activeIndicator" onclick="slideCarousel(0)"></div>
+            <div class="indicator" onclick="slideCarousel(1)"></div>
+            <div class="indicator" onclick="slideCarousel(2)"></div>
+
+        </div>
+    </section>
+	
+    <!-- Processes -->
+    <section class="gridSection">
+        <div class="sectionDesc processessDesc">
+            <h1 class="sectionHeader">Information:</h1>
+            <p class="sectionPara">Here the pertinent information about our presence on the different networks will be made available.
+            </p>
+            <div class="eachProcesses">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Contracts:</h1>
+                    <p>
+                        BNB Network (NOT LAUNCHED): 0x4d1fD955520A26660CDF6c6a62467509FDe9cB6d
+                    </p>
+                    <br>
+                    <p>
+                        SOL Network: 
+                    </p>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="footerlinksContainer">
+        <div class="footerAboutus">
+            <img src="./img/logo-white.png" alt="">
+            <p class="darkPara">No commissions, no misinformation, for a connected and financially and digitally free world</p>
+            <div class="footersociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Explore</h1>
+            <a href="./aboutus.html" class="eachLink">About us</a>
+            <a href="./faq.html" class="eachLink">FAQ</a>
+            <a href="mailto:bncash@protonmail.com" class="eachLink">Contact</a>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Resource</h1>
+            <a href="https://github.com/RUSHE3D/BNCash-Token" class="eachLink">Github</a>
+            <a href="https://github.com/RUSHE3D/BNCash-Token/blob/main/CHANGELOG.md" class="eachLink">Change Log</a>
+            <a href="https://www.gnu.org/licenses/gpl-3.0.html" class="eachLink">License</a>
+        </div>
+    </div>
+
+    <div class="footerCopyright">
+        <p>&copy; 2024 BNCash</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
